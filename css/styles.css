@@ -16,7 +16,7 @@ body {
 }
 
 a {color: black;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 /** HEADER **/
@@ -71,11 +71,11 @@ a {color: black;
 }
 
 .navbar-toggle .icon-bar + .icon-bar {
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
 .navbar-header button.navbar-toggle, .navbar-beader .icon-bar {
-  border: 1px solid black;
+  border: 1px white;
 }
 
 .navbar-header button.navbar-toggle {
