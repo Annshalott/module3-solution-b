@@ -47,17 +47,17 @@ a {color: black;
 
 #nav-list {
   margin-top: 3px;
-  border: 1px solid black;
+  border: 1px transparent;
 }
 
 #nav-list a {
   color: black;
   text-align: center;
-  border: 1px solid black;
+  border: 1px white;
 }
 #nav-list a:hover {
   background: grey;
-  border: 1px solid black;
+  border: 1px white;
 }
 #nav-list a span {
   font-size: 2em;
