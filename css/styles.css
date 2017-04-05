@@ -1,3 +1,25 @@
+style.css
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: black;
+
+}
+
+body {
+    background-color: white;
+    font-family: "Comic Sans MS", arial, verdana;
+    
+}
+
+a {color: black;
+  font-size: 1.2em;
+}
+
+/** HEADER **/
 #header-nav {
   background-color: darkgrey;
   border-color: black;
@@ -21,6 +43,7 @@
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
+
 
 #nav-list {
   margin-top: 3px;
@@ -76,6 +99,14 @@ a:hover {
 a:active {
     text-decoration: underline;
 }
+
+/* END HEADER */
+
+
+
+
+/*** OldCSS***/
+
 
 h1 {/*Our Memu*/
     font-size: 2em;
@@ -134,8 +165,6 @@ h2 {
 /****** Medium and Large device only ******/
 @media (min-width: 992px) {
 
-
-
   .col-md-12 {
     float: left;
     width: 95%;
@@ -144,14 +173,11 @@ h2 {
     height: auto;
   }
 
-  
 }
 
 /****** Small device only ******/
 @media (min-width: 768px) and (max-width: 991px) {
   
-
-
   .col-md-12 {
     float: left;
     width: 95%;
@@ -167,7 +193,6 @@ h2 {
 
 
 /****** Extra small devices only ******/
-
 
 @media (max-width: 767px) {
 .navbar-nav {
@@ -212,3 +237,5 @@ h2 {
   }
 
 }
+
+
