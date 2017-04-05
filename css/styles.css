@@ -1,85 +1,214 @@
-body {
-  font-size: 16px;
-  color: #fff;
-  background-color: #61122f;
-  font-family: 'Oxygen', sans-serif;
-}
-
-/** HEADER **/
 #header-nav {
-  background-color: #f6b319;
+  background-color: darkgrey;
+  border-color: black;
   border-radius: 0;
-  border: 0;
+  border: 1px;
 }
 
-#logo-img {
-  background: url('../images/restaurant-logo_large.png') no-repeat;
-  width: 150px;
-  height: 150px;
-  margin: 10px 15px 10px 0;
+.navbar-brand { 
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
 }
 
-.navbar-brand {
-  padding-top: 25px;
+.navbar-brand h3{ /* Restaurant name*/
+ font-weight: bold;
+ text-shadow: 1px 1px 1px grey;
+ margin-top: 0;
+ margin-bottom: 0;
 }
 
-.navbar-brand h1 { /* Restaurant name */
-  font-family: 'Lora', serif;
-  color: #557c3e;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px #222;
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: .75;
-}
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
-.navbar-brand p { /* Kosher cert */
-  color: #000;
-  text-transform: uppercase;
-  font-size: .7em;
-  margin-top: 15px;
-}
-.navbar-brand p span { /* Star-K */
-  vertical-align: middle;
-}
 
 #nav-list {
-  margin-top: 10px;
+  margin-top: 3px;
+  border: 1px solid black;
 }
+
 #nav-list a {
-  color: #951C49;
+  color: black;
   text-align: center;
+  border: 1px solid black;
 }
 #nav-list a:hover {
-  background: #E7E7E7;
+  background: grey;
+  border: 1px solid black;
 }
 #nav-list a span {
-  font-size: 1.8em;
+  font-size: 2em;
 }
 
-#phone {
-  margin-top: 5px;
-}
-#phone a { /* Phone number */
-  text-align: right;
-  padding-bottom: 0;
-}
-#phone div { /* We Deliver */
-  color: #557c3e;
-  text-align: right;
-  padding-right: 15px;
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
 }
 
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f;
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 4px;
 }
+
+.navbar-header button.navbar-toggle, .navbar-beader .icon-bar {
+  border: 1px solid black;
+}
+
 .navbar-header button.navbar-toggle {
   clear: both;
   margin-top: -30px;
 }
-/* END HEADER */
 
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+h1 {/*Our Memu*/
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+div {
+    overflow: hidden;
+}
+
+
+p {
+  font-size: 0.8em;
+  text-align: left;
+  background-color: grey;
+  height: auto;
+  padding-top: 40px;
+  padding-right: 8px;
+  padding-left: 8px;
+  padding-bottom: 10px;
+  overflow: hidden;
+ 
+}
+
+h2 {
+    color: black;
+    font-size:1em;
+    position: absolute;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+  .navbar-toggle {
+    position: relative;
+    float: right;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+
+/*
+#content {
+  position:relative;
+}
+
+
+/****** Simple Responsive Framework *******/
+
+.row {
+  width: 100%;
+
+}
+
+/****** Medium and Large device only ******/
+@media (min-width: 992px) {
+
+
+
+  .col-md-12 {
+    float: left;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    height: auto;
+  }
+
+  
+}
+
+/****** Small device only ******/
+@media (min-width: 768px) and (max-width: 991px) {
+  
+
+
+  .col-md-12 {
+    float: left;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    height: auto;
+  }
+
+  h1 {  font-size: 1.5em
+}
+
+}
+
+
+/****** Extra small devices only ******/
+
+
+@media (max-width: 767px) {
+.navbar-nav {
+  margin: 7.5px -10px;
+}
+.navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+
+ #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+ #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  .col-sm-12 {
+    width: 90%;
+    float: center;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    height: auto;
+  }
+
+   h1 { font-size: 1.8em
+}
+
+  .visible-xs {
+    font-size: 1em;
+  }
+
+}
